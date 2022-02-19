@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.bookmark.ActiveBookmarkFragment">
+    tools:context=".ui.main.applicant.bookmark.ActiveBookmarkFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="history bookmark" />
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_above="@id/tv_find"
+        android:layout_width="224dp"
+        android:layout_height="264dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/current_job_image"/>
 
-</FrameLayout>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Let's find a job"/>
+
+</RelativeLayout>

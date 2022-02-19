@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/search_fragment">
+<!--    <fragment-->
+<!--        android:id="@+id/main_fragment"-->
+<!--        android:name="id.motionhack.yukerja.ui.main.MainFragment"-->
+<!--        android:label="fragment_main"-->
+<!--        tools:layout="@layout/main_fragment">-->
+<!--&lt;!&ndash;        <action&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/navigate_to_profile_fragment"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:destination="@id/profile_fragment"/>&ndash;&gt;-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/search_fragment"
+        android:name="id.motionhack.yukerja.ui.main.employer.dashboard.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/search_fragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/bookmark_fragment"
+        android:name="id.motionhack.yukerja.ui.main.employer.bookmark.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/bookmark_fragment"/>
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="id.motionhack.yukerja.ui.main.employer.profile.ProfileEmployerFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile"/>
+</navigation>

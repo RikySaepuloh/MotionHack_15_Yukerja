@@ -8,10 +8,61 @@
         android:id="@+id/login_fragment"
         android:name="id.motionhack.yukerja.ui.login.LoginFragment"
         android:label="login_fragment"
-        tools:layout="@layout/login_fragment"/>
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_login_to_sign_up"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="id.motionhack.yukerja.ui.login.SignUpFragment"
         android:label="sign_up_fragment"
-        tools:layout="@layout/sign_up_fragment" />
+        tools:layout="@layout/sign_up_fragment" >
+        <action
+            android:id="@+id/action_sign_up_to_login"
+            app:destination="@id/login_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/login_fragment"/>
+        <action
+            android:id="@+id/action_sign_up_to_sign_up_employer"
+            app:destination="@id/signUpEmployerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/signUpEmployerFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signUpEmployerFragment"
+        android:name="id.motionhack.yukerja.ui.login.employer.SignUpEmployerFragment"
+        android:label="sign_up_employer_fragment"
+        tools:layout="@layout/sign_up_fragment_employer" >
+        <action
+            android:id="@+id/action_sign_up_employer_to_login"
+            app:destination="@id/login_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/login_fragment"/>
+        <action
+            android:id="@+id/action_sign_up_employer_to_sign_up_applicant"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/signUpFragment"/>
+    </fragment>
 </navigation>

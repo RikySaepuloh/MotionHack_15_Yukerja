@@ -7,10 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import id.motionhack.yukerja.R
 import id.motionhack.yukerja.databinding.MainFragmentBinding
 import id.motionhack.yukerja.domain.model.DashboardItem
-import id.motionhack.yukerja.ui.main.dashboard.DashboardAdapter
+import id.motionhack.yukerja.ui.main.applicant.dashboard.DashboardAdapter
 
 class MainFragment : Fragment() {
 
@@ -50,9 +49,9 @@ class MainFragment : Fragment() {
 
     private fun initData() {
         val populateData = ArrayList<DashboardItem>()
-        populateData.add(DashboardItem(R.drawable.list_main_image,"Fill the questionnaire","5","25.000"))
-        populateData.add(DashboardItem(R.drawable.list_main_image,"Fill the questionnaire","5","25.000"))
-        populateData.add(DashboardItem(R.drawable.list_main_image,"Fill the questionnaire","5","25.000"))
+        populateData.add(DashboardItem( title = "Review Apps", employer = "Motion Lab.", duration = "1",verified = true,disability = true, salary = "50.000"))
+        populateData.add(DashboardItem( title = "Teaching Assistant", employer = "Computing Lab.", duration = "14",verified = false,disability = false, salary = "1.500.000"))
+        populateData.add(DashboardItem( title = "Build Apps", employer = "Proclub.", duration = "1",verified = false,disability = false, salary = "2.700.000"))
         dataAdapter.initData(populateData)
     }
 

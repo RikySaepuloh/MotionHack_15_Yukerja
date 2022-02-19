@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import id.motionhack.yukerja.R
 import id.motionhack.yukerja.databinding.SignUpFragmentBinding
 
 class SignUpFragment : Fragment() {
@@ -42,4 +44,14 @@ class SignUpFragment : Fragment() {
         // TODO: Use the ViewModel
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.tvCreateNew.setOnClickListener {
+            this.findNavController().navigate(R.id.action_sign_up_to_login)
+        }
+
+        binding.btnEmployer.setOnClickListener {
+            this.findNavController().navigate(R.id.action_sign_up_to_sign_up_employer)
+        }
+    }
 }

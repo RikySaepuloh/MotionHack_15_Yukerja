@@ -9,21 +9,21 @@
     android:gravity="center"
     android:layout_marginEnd="25dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/list_main_image"/>
-<!--    <com.google.android.material.card.MaterialCardView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:cardCornerRadius="10dp"-->
-<!--        app:cardElevation="0dp">-->
-<!--        <ImageView-->
-<!--            android:layout_width="70dp"-->
-<!--            android:layout_height="70dp"-->
-<!--            android:src="@drawable/list_main_image"-->
-<!--            />-->
-<!--    </com.google.android.material.card.MaterialCardView>-->
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:src="@drawable/list_main_image"/>-->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/list_main_image"
+            />
+    </com.google.android.material.card.MaterialCardView>
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="1"

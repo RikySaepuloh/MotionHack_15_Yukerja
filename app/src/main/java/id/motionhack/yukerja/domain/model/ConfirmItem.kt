@@ -1,10 +1,11 @@
 package id.motionhack.yukerja.domain.model
 
 data class DashboardItem(
-
-	val image: Int,
 	val title: String,
-	val quota: String,
+	val employer: String,
+	val duration: String,
+	val verified: Boolean,
+	val disability: Boolean,
 	val salary: String
 )
 

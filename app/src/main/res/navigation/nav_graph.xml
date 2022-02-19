@@ -3,29 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/main_fragment">
-    <fragment
-        android:id="@+id/main_fragment"
-        android:name="id.motionhack.yukerja.ui.main.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/main_fragment">
-<!--        <action-->
-<!--            android:id="@+id/navigate_to_profile_fragment"-->
-<!--            app:destination="@id/profile_fragment"/>-->
-    </fragment>
+    app:startDestination="@id/search_fragment">
+<!--    <fragment-->
+<!--        android:id="@+id/main_fragment"-->
+<!--        android:name="id.motionhack.yukerja.ui.main.MainFragment"-->
+<!--        android:label="fragment_main"-->
+<!--        tools:layout="@layout/main_fragment">-->
+<!--&lt;!&ndash;        <action&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/navigate_to_profile_fragment"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:destination="@id/profile_fragment"/>&ndash;&gt;-->
+<!--    </fragment>-->
     <fragment
         android:id="@+id/search_fragment"
-        android:name="id.motionhack.yukerja.ui.main.search.SearchFragment"
+        android:name="id.motionhack.yukerja.ui.main.applicant.dashboard.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/search_fragment"/>
+        tools:layout="@layout/search_fragment" >
+    </fragment>
     <fragment
         android:id="@+id/bookmark_fragment"
-        android:name="id.motionhack.yukerja.ui.main.bookmark.BookmarkFragment"
+        android:name="id.motionhack.yukerja.ui.main.applicant.bookmark.BookmarkFragment"
         android:label="fragment_bookmark"
         tools:layout="@layout/bookmark_fragment"/>
     <fragment
         android:id="@+id/profile_fragment"
-        android:name="id.motionhack.yukerja.ui.main.ProfileFragment"
+        android:name="id.motionhack.yukerja.ui.main.applicant.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile"/>
 </navigation>

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.main.SearchFragment">
+    tools:context=".ui.main.applicant.bookmark.BookmarkFragment">
 
     <RelativeLayout
         android:id="@+id/linear"
@@ -33,9 +33,9 @@
         app:layout_constraintTop_toBottomOf="@id/linear"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tabIndicatorColor="#FBB64C"
-        app:tabSelectedTextColor="#555555"
-        app:tabTextColor="#555555"
+        app:tabIndicatorColor="@color/green"
+        app:tabSelectedTextColor="@color/grey3"
+        app:tabTextColor="@color/grey3"
         android:layout_height="wrap_content">
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"

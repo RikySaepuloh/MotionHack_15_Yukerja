@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "856516569410",
+    "project_id": "yukerja-a34ea",
+    "storage_bucket": "yukerja-a34ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856516569410:android:1d87d9092386134fa640db",
+        "android_client_info": {
+          "package_name": "id.motionhack.yukerja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856516569410-1lmkr1if7s88s33h9g1pt0e893cbh98q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.motionhack.yukerja",
+            "certificate_hash": "e69ddedd38e69777935e358cf68e5bc9c07fbaa7"
+          }
+        },
+        {
+          "client_id": "856516569410-mori93ogee6hcltg16pfnct3lle65ims.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2AtfySvJ_3ryJiu7PhUh2o3dEi58l94w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856516569410-mori93ogee6hcltg16pfnct3lle65ims.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

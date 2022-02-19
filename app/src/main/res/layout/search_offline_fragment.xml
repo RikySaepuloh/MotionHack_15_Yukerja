@@ -3,9 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.bookmark.ActiveBookmarkFragment">
+    tools:context=".ui.main.applicant.dashboard.OfflineSearchFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:paddingTop="7dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <TextView
         android:id="@+id/no_job_text"
+        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -14,6 +23,7 @@
         android:textSize="12sp"/>
     <ImageView
         android:layout_above="@id/no_job_text"
+        android:visibility="invisible"
         android:layout_marginBottom="32dp"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
