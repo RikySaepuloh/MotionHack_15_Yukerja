@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/dotted_line.xml" value="0.181" />
+        <entry key="app/src/main/res/layout/activity_add_vacancy.xml" value="0.33541666666666664" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.33541666666666664" />
+        <entry key="app/src/main/res/layout/activity_detail_applicant.xml" value="0.33541666666666664" />
+        <entry key="app/src/main/res/layout/activity_detail_pay.xml" value="0.33541666666666664" />
         <entry key="app/src/main/res/layout/activity_detail_vacancy.xml" value="0.33541666666666664" />
         <entry key="app/src/main/res/layout/activity_job_taken.xml" value="0.17239583333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.17239583333333333" />
@@ -33,7 +36,7 @@
         <entry key="app/src/main/res/layout/search_offline_fragment.xml" value="0.33541666666666664" />
         <entry key="app/src/main/res/layout/search_online_employer_fragment.xml" value="0.33541666666666664" />
         <entry key="app/src/main/res/layout/search_online_fragment.xml" value="0.33541666666666664" />
-        <entry key="app/src/main/res/layout/sign_up_fragment.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/sign_up_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/sign_up_fragment_employer.xml" value="0.5" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.33541666666666664" />
       </map>

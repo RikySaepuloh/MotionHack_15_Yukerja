@@ -49,10 +49,10 @@ class BookmarkEmployerAdapter : RecyclerView.Adapter<BookmarkEmployerAdapter.Dat
                 binding.tvJobTaken.text = jobTaken
                 binding.tvEducation.text = education
                 binding.tvPosition.text = jobPosition
-//                binding.root.setOnClickListener {
-//                    val intent= Intent(context, DetailVacancyActivity::class.java)
-//                    context.startActivity(intent)
-//                }
+                binding.root.setOnClickListener {
+                    val intent= Intent(context, DetailPayActivity::class.java)
+                    context.startActivity(intent)
+                }
             }
         }
     }

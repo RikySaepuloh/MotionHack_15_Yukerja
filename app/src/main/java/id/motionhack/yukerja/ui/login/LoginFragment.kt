@@ -66,7 +66,7 @@ class LoginFragment : Fragment() {
             .requestEmail()
             .build()
         mGoogleSignInClient = activity?.let { it1 -> GoogleSignIn.getClient(it1, gso) }!!
-        binding.btnLogin.setOnClickListener {
+        binding.btnContinue.setOnClickListener {
             if (binding.etEmail.text.toString()!=""){
                 val intent= Intent(context, MainActivityEmployer::class.java)
                 startActivity(intent)

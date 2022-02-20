@@ -28,6 +28,10 @@
         <activity android:name=".ui.main.applicant.MainActivity" />
         <activity android:name=".ui.main.employer.MainActivityEmployer" />
         <activity android:name=".ui.main.applicant.detail.DetailActivity" />
+        <activity android:name=".ui.main.employer.bookmark.DetailPayActivity" />
+        <activity android:name=".ui.main.employer.bookmark.PaymentSuccessActivity" />
+        <activity android:name=".ui.main.employer.detail.DetailApplicantActivity" />
+        <activity android:name=".ui.main.employer.dashboard.AddVacancyActivity" />
     </application>
 
 </manifest>

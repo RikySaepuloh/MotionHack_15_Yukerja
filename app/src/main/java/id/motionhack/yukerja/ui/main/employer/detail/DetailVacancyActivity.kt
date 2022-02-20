@@ -18,6 +18,9 @@ class DetailVacancyActivity : AppCompatActivity() {
         setContentView(view)
         binding.recyclerview.layoutManager = LinearLayoutManager(this)
         binding.recyclerview.adapter = dataAdapter
+        binding.btnClose.setOnClickListener {
+            finish()
+        }
         initData()
     }
 

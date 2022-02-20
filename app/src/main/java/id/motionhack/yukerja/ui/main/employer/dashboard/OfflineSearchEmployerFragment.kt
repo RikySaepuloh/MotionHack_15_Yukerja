@@ -45,8 +45,8 @@ class OfflineSearchEmployerFragment : Fragment() {
 
     private fun initData() {
         val populateData = ArrayList<VacancyItem>()
-        populateData.add(VacancyItem( title = "Burgerman", employer = "Burger King.", duration = "4 hours",limit = "3/5",disability = false, salary = "400.000"))
-        populateData.add(VacancyItem( title = "Courier Delivery", employer = "Burger King.", duration = "4 hours", limit = "6/7",disability = false, salary = "250.000"))
+        populateData.add(VacancyItem( title = "Burgerman", employer = "Burger King.", duration = "4 hours",limit = "3/5",disability = false, salary = "40"))
+        populateData.add(VacancyItem( title = "Courier Delivery", employer = "Burger King.", duration = "4 hours", limit = "6/7",disability = false, salary = "25"))
         dataAdapter.initData(populateData)
     }
 

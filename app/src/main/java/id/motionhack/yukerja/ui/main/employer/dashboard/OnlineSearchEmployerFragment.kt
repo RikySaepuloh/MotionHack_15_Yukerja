@@ -45,9 +45,9 @@ class OnlineSearchEmployerFragment : Fragment() {
 
     private fun initData() {
         val populateData = ArrayList<VacancyItem>()
-        populateData.add(VacancyItem( title = "Review Apps", employer = "Motion Lab.", duration = "1 day", limit = "3/10",disability = true, salary = "50.000"))
-        populateData.add(VacancyItem( title = "Teaching Assistant", employer = "Computing Lab.", duration = "14 day",limit = "5/8",disability = false, salary = "1.500.000"))
-        populateData.add(VacancyItem( title = "Build Apps", employer = "Proclub.", duration = "30 day",limit = "8/10",disability = false, salary = "2.700.000"))
+        populateData.add(VacancyItem( title = "Review Apps", employer = "Motion Lab.", duration = "1 day", limit = "3/10",disability = true, salary = "50"))
+        populateData.add(VacancyItem( title = "Teaching Assistant", employer = "Computing Lab.", duration = "14 day",limit = "5/8",disability = false, salary = "150"))
+        populateData.add(VacancyItem( title = "Build Apps", employer = "Proclub.", duration = "30 day",limit = "8/10",disability = false, salary = "270"))
         dataAdapter.initData(populateData)
     }
 

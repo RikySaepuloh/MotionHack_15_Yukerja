@@ -1,5 +1,6 @@
 package id.motionhack.yukerja.ui.login
 
+import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,6 +10,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import id.motionhack.yukerja.R
 import id.motionhack.yukerja.databinding.SignUpFragmentBinding
+import id.motionhack.yukerja.ui.main.applicant.MainActivity
 
 class SignUpFragment : Fragment() {
 
@@ -50,8 +52,16 @@ class SignUpFragment : Fragment() {
             this.findNavController().navigate(R.id.action_sign_up_to_login)
         }
 
-        binding.btnEmployer.setOnClickListener {
-            this.findNavController().navigate(R.id.action_sign_up_to_sign_up_employer)
+        binding.btnContinue.setOnClickListener {
+            val intent= Intent(context,MainActivity::class.java)
+            startActivity(intent)
+            requireActivity().finishAffinity()
         }
+
+        binding.spinner.setItems(listOf("I'm an Applicant","I'm an Employer"))
+
+//        binding.btnEmployer.setOnClickListener {
+//            this.findNavController().navigate(R.id.action_sign_up_to_sign_up_employer)
+//        }
     }
 }

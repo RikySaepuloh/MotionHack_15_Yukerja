@@ -49,7 +49,7 @@ class DashboardEmployerAdapter : RecyclerView.Adapter<DashboardEmployerAdapter.D
                     binding.tvDisability.visibility=View.INVISIBLE
                 }
                 binding.tvEmployer.text = employer
-                "Rp$salary".also { binding.tvSalary.text = it }
+                "$$salary".also { binding.tvSalary.text = it }
                 "$duration".also { binding.tvDuration.text = it }
                 binding.root.setOnClickListener {
                     val intent= Intent(context, DetailVacancyActivity::class.java)

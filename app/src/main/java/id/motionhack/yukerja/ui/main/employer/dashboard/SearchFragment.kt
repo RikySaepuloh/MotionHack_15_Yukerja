@@ -1,5 +1,6 @@
 package id.motionhack.yukerja.ui.main.employer.dashboard
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -48,6 +49,10 @@ class SearchFragment : Fragment() {
             binding.searchview.queryHint = "Recent Vacancy"
         }
         binding.fabAdd.visibility= View.VISIBLE
+        binding.fabAdd.setOnClickListener {
+            val intent=Intent(context,AddVacancyActivity::class.java)
+            startActivity(intent)
+        }
         initTabLayoutViewpager()
     }
 

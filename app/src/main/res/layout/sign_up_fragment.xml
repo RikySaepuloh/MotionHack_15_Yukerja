@@ -71,7 +71,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tv_job_taken"
-        app:layout_constraintBottom_toTopOf="@id/btn_login"
+        app:layout_constraintBottom_toTopOf="@id/tv_role"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -94,8 +94,33 @@
             android:hint="Confirm Password" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tv_role"
+        app:layout_constraintBottom_toTopOf="@id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="14dp"
+        android:textColor="#555555"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/grey3"
+        app:cardCornerRadius="15dp"
+        android:layout_marginEnd="24dp"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_job_taken" >
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            app:ms_hint="I'm an..."
+            app:ms_hint_color="@color/black"
+            android:hint="I'm an..."
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_continue"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -104,72 +129,14 @@
         android:insetBottom="0dp"
         android:layout_marginEnd="24dp"
         android:text="Continue"
-        app:layout_constraintBottom_toTopOf="@id/materialDivider"
+        app:layout_constraintBottom_toTopOf="@id/textView2"
         android:textSize="12sp"
         app:cornerRadius="15dp"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_job_taken" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_role" />
 
-    <RelativeLayout
-        android:id="@+id/materialDivider"
-        android:layout_width="match_parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_employer"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login"
-        android:layout_height="wrap_content">
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#BBBBBB"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="12dp"
-            android:layout_toStartOf="@id/textView4"
-            />
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_height="wrap_content"
-            android:text="OR"
-            />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginEnd="24dp"
-            android:background="#BBBBBB"
-            android:layout_marginStart="12dp"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@id/textView4"
-            />
-    </RelativeLayout>
-
-
-    <com.google.android.material.button.MaterialButton
-        style="?attr/materialButtonOutlinedStyle"
-        android:id="@+id/btn_employer"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="24dp"
-        android:insetTop="0dp"
-        app:strokeColor="@color/green"
-        android:insetBottom="0dp"
-        android:layout_marginBottom="43dp"
-        android:text="Continue as an Employer"
-        android:textColor="@color/green"
-        android:textAllCaps="false"
-        android:textSize="12sp"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialDivider" />
 
     <TextView
         android:id="@+id/textView2"

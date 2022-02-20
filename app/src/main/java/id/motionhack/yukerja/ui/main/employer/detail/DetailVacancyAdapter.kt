@@ -42,10 +42,10 @@ class DetailVacancyAdapter : RecyclerView.Adapter<DetailVacancyAdapter.DataPenga
                 binding.tvPosition.text = jobPosition
                 binding.tvJobTaken.text = jobTaken
                 binding.tvEducation.text = education
-//                binding.root.setOnClickListener {
-//                    val intent= Intent(context, DetailVacancyActivity::class.java)
-//                    context.startActivity(intent)
-//                }
+                binding.root.setOnClickListener {
+                    val intent= Intent(context, DetailApplicantActivity::class.java)
+                    context.startActivity(intent)
+                }
             }
         }
     }
